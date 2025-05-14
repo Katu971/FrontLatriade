@@ -1,0 +1,16 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won’t be available)
+$primary: #FFFFFF;
+$secondary: #D1D1D1;
+$colorKatucya: #0D0D0D;
+$colorSarah : #AA5E32;
+$backgroundAcceuil: var(--fond-acceuil, linear-gradient(180deg, #FFF 11.74%, #999 21.33%, #535353 39.89%, #3A3A3A 60.58%, #1C1C1C 79.62%, #141414 91.14%));
+$tertiary: #535353;
+$font-family: "Inter", sans-serif !default;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
