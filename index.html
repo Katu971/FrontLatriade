@@ -12,14 +12,50 @@
 
 <body>
 
-    <button class="btn btn-secondary">Cliquez ici</button>
-    <header>Le menu de la triade <i class="bi bi-house"></i></header>
-    <main id="main-page">
-        <h1>Le contenu principal</h1>
-        <p>Voici le contenu principal de la page.</p>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow p-3 mb-5 fixed-top">
+            <div class="container-fluid d-flex align-items-center justify-content-between position-relative">
+                <!-- Logo gauche -->
+                <a class="logo-icon-nav" href="/">
+                    <img src="public/images/logo-icon-nav.svg" alt="Logo icon nav" />
+                </a>
+                <!-- Logo centre (positionné absolument au centre du container) -->
+                <a class="logo-la-triade position-absolute start-50 translate-middle-x" href="/">
+                    <img src="public/images/logo-la-triade.svg" alt="Logo la triade" />
+                </a>
+                <!-- Bouton menu à droite -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu (collapse) -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ACCEUIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GALERIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/"><img src="public/images/logo-instagram.svg" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main-centered" id="main-page">
+        <!-- Le contenu de la page-->
     </main>
 
-    <footer>Le pied de page</footer>
+    <footer>Le footer de mon site</footer>
 
     <script type="module" src="Router/Router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

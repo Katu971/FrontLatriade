@@ -14,3 +14,114 @@ $font-family: "Inter", sans-serif !default;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050; // S'assure qu'elle passe au-dessus du contenu
+
+}
+
+
+
+
+.logo-icon-nav1 {
+    position: absolute;
+    width: 32.31%;
+    top: 0px;
+    right: 32.31%;
+    left: 35.38%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 44.6px;
+    object-fit: cover;
+}
+
+.menu {
+    width: 130px;
+    position: relative;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.31);
+    border-radius: 0px 0px 12px 12px;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    height: 215px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    font-family: Inter;
+}
+
+.acceuil {
+    width: 74px;
+    position: relative;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.galeries {
+    position: absolute;
+    top: 0px;
+    left: 1.38px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72.6px;
+    height: 38px;
+}
+
+.headermobile-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.logo-la-triade {
+    width: 70%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 50px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon-nav {
+    position: absolute;
+    width: 10.91%;
+    top: 5px;
+    right: 74.72%;
+    left: 14.38%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 37px;
+    object-fit: cover;
+    display: flex;
+
+}
+
+.headermobile {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    height: 52px;
+}
