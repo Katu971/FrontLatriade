@@ -11998,17 +11998,6 @@ body {
   overflow: hidden;
 }
 
-.background-gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  background: var(--fond-acceuil, linear-gradient(180deg, #FFF 11.74%, #999 21.33%, #535353 39.89%, #3A3A3A 60.58%, #1C1C1C 79.62%, #141414 91.14%));
-  opacity: 1;
-}
-
 .background-video {
   position: absolute;
   top: 50%;
@@ -12029,17 +12018,19 @@ body {
 
 .logo-la-triade {
   position: absolute;
-  width: 44.06%;
-  top: 9px;
-  right: 27.81%;
-  left: 28.13%;
-  max-width: 100%;
-  overflow: hidden;
-  height: 33.2px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.logo-la-triade img {
+  width: 169.2px;
+  height: 39.811px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
 }
 
 .logo-icon-nav {
@@ -12141,6 +12132,7 @@ body {
   text-align: center;
   padding: 0 60px;
   z-index: 10;
+  margin-bottom: clamp(30px, 5vw, 60px);
 }
 
 .home-paragraph .home-block-1 {
@@ -12227,10 +12219,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 40px;
   margin-top: 30px;
+  margin-bottom: 40px;
   width: 100%;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 900px) {
@@ -12333,4 +12329,202 @@ body {
      object-fit: contain;
   margin-top: 5px;
   display: block;
+}
+
+.apercu-img-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: clamp(40px, 6vw, 60px) auto 0 auto;
+  margin-bottom: 80px;
+}
+
+.apercu-rectangle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #D1D1D1;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: clamp(268px, 40vw, 440px);
+  height: clamp(46px, 7vw, 75.522px);
+  border-radius: 8px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apercu-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: clamp(131.43px, 18vw, 240.954px);
+  height: clamp(24.24px, 3vw, 44.44px);
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.tatoueuses-img-wrapper,
+.artists-layout,
+.apercu-img-wrapper {
+  margin-top: 0;
+  margin-bottom: clamp(60px, 6vw, 80px);
+}
+
+.tatoueuses-img-wrapper {
+  margin-top: 0;
+}
+
+.apercu-img-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.tattoo-gallery-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  min-width: 268px;
+  max-width: 1200px;
+  height: auto;
+  gap: 10px;
+  flex-shrink: 0;
+  margin: 40px auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  transition: width 0.3s, height 0.3s;
+  z-index: 10;
+}
+
+@media (max-width: 320px) {
+  .tattoo-gallery-layout {
+    min-width: 229px;
+  }
+}
+.tattoo-gallery-img {
+  width: clamp(115px, 22vw, 246px);
+  height: clamp(144px, 28vw, 307px);
+  min-width: 115px;
+  min-height: 144px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #eee;
+  transition: width 0.3s, height 0.3s;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.footer-latriade {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: transparent;
+  padding: 40px 0 0 0;
+}
+
+.footer-content {
+  width: 302px;
+  height: 455px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer-separator {
+  width: 257px;
+  height: 1px;
+  background: #fff;
+  border: none;
+  margin: 0 0 24px 0;
+  opacity: 1;
+}
+
+.footer-icon {
+  width: clamp(78px, 26vw, 213px);
+  height: clamp(72.382px, 25vw, 198px);
+  margin-bottom: 24px;
+  display: block;
+}
+
+.footer-address {
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.footer-contact-label {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.footer-contact-info {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-bref-img {
+  width: 245.684px;
+  height: 43.63px;
+  display: block;
+  margin: 0 auto;
+}
+
+.background-gradient-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-width: 320px;
+  height: 3582px;
+  min-height: 3582px;
+  background: var(--fond-acceuil, linear-gradient(180deg, #FFF 11.74%, #999 21.33%, #535353 39.89%, #3A3A3A 60.58%, #1C1C1C 79.62%, #141414 91.14%));
+  z-index: 0;
+  pointer-events: none;
+  /* Grandit proportionnellement à l'écran */
+  height: max(3582px, 100vh);
+}
+
+@media (min-width: 900px) {
+  .background-gradient-scroll {
+    min-width: 100vw;
+    height: max(3582px, 100vh, 120vw);
+  }
+}
+html,
+body,
+.main-centered {
+  height: 100%;
+  min-height: 100vh;
 }/*# sourceMappingURL=main.css.map */
