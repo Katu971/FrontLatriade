@@ -1,0 +1,38 @@
+<style>
+    html,
+    body {
+        height: 100%;
+        min-height: 100vh;
+        background: linear-gradient(FFFFFF) !important;
+    }
+</style>
+
+<body>
+    <div class="background-gradient-scroll-contact"></div>
+    <img class="contact-map-img" src="public/images/map.jpg" alt="Contact map img" />
+    <div class="contact-form-superpose">
+        <form class="contact-form-custom">
+
+            <div class="contact-form-title">écris-nous</div>
+
+            <div class="contact-form-labels-column">
+                <label class="contact-form-label nom-label">Nom<span class="required">*</span></label>
+                <label class="contact-form-label mail-label">Mail <span class="required">*</span></label>
+                <label class="contact-form-label téléphone-label">Téléphone</label>
+                <label class="contact-form-label message-label">Message <span class="required">*</span></label>
+            </div>
+            <div class="contact-form-inputs-column">
+                <div class="contact-form-row">
+                    <input class="contact-form-input" type="text" name="prenom" placeholder="Prénom" required />
+                    <input class="contact-form-input" type="text" name="nom" placeholder="Nom" required />
+                </div>
+                <input class="contact-form-input mail" type="email" name="mail" />
+                <input class="contact-form-input" type="tel" name="tel" />
+                <textarea class="contact-form-textarea" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-form-btn">Envoyer</button>
+
+        </form>
+    </div>
+</body>
