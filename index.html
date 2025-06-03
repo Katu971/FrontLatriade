@@ -15,33 +15,38 @@
 
     <header>
         <nav class="navbar navbar-expand-lg bg-white shadow p-3 mb-5 fixed-top">
-            <div class="container-fluid d-flex align-items-center justify-content-center">
+            <div class="container-fluid">
                 <!-- Instagram à gauche -->
-                <a class="nav-link insta-link me-10" href="https://www.instagram.com/" target="_blank"
+                <a class="nav-link insta-link" href="https://www.instagram.com/" target="_blank"
                     aria-label="Instagram La Triade">
                     <img src="public/images/logo-instagram.svg" alt="Instagram" style="width:20px;height:20px;" />
                 </a>
                 <!-- Logo centre -->
-                <a class="logo-la-triade img-fluid ms-auto" href="/">
-                    <img src="public/images/logo-la-triade.svg" alt="Logo la triade" />
-                </a>
+                <a class="navbar-brand ms-auto" href="/"><img src="public/images/logo-la-triade.svg"
+                        alt="Logo la triade" /></a>
                 <!-- Bouton menu personnalisé à droite du logo -->
                 <button class="navbar-toggler custom-menu-btn ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="public/images/bouton-menu.svg" alt="Menu" width="15" height="10" />
+                    <img src="public/images/bouton-menu.svg" />
                 </button>
                 <!-- Menu (collapse) -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ACCEUIL</a>
+                            <a class="nav-link" href="#">Acceuil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Galeries</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Katucya</a></li>
+                                <li><a class="dropdown-item" href="#">Emmanuelle</a></li>
+                                <li><a class="dropdown-item" href="#">Sarah</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">GALERIES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>

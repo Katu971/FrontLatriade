@@ -27,27 +27,116 @@ body {
 }
 
 .main-centered-home {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 320px;
     width: 100vw;
     min-height: 100vh;
-    margin: 0 auto;
-    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; // Pour éviter les débordements
+    min-width: 320px; // Assure une largeur minimale pour les petits écrans
+    height: auto; // Permet à la hauteur de s'ajuster au contenu
+
 }
 
-@media (min-width: 1200px) {
-    .main-centered-home {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        width: 100vw;
-        min-width: 320px;
-        min-height: 100vh;
+.navbar-brand {
+    margin-right: 0; // Supprime la marge droite par défaut
+    margin-left: 0; // Supprime la marge gauche par défaut
+}
+
+/* Affiche le menu horizontalement en desktop, verticalement en mobile */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+        background: #fff;
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .dropdown-menu {
+        margin-left: 60px; // Décalage de 50px vers la droite
+        background-color: #fff;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .dropdown-item {
+        color: #626262; // Couleur du texte des éléments du menu déroulant
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #3b3b3b; // Couleur du texte des liens
+    }
+
+    .navbar-nav {
+        width: 100%;
+        padding: 0.7rem 0;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        display: block !important;
+        margin-left: auto;
+    }
+
+    .navbar-collapse {
+        width: 100%;
     }
 }
+
+/* En desktop, menu horizontal classique */
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-direction: row !important;
+        align-items: center !important;
+        background: transparent;
+        padding: 0;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 15px;
+        padding: 4px 16px;
+        text-align: center;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+    }
+
+    .dropdown-menu {
+        margin-left: 0; // Pas de décalage en desktop
+    }
+
+
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+.container-fluid-custom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .background-video-container {
     position: fixed;
@@ -77,16 +166,6 @@ body {
     overflow: hidden;
 }
 
-
-.logo-la-triade {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    z-index: 2;
-}
 
 .logo-icon-nav {
     position: absolute;
@@ -188,7 +267,7 @@ body {
     text-align: center;
     padding: 0 60px; // Ajoute des marges internes à gauche et à droite
     z-index: 10;
-    margin-bottom: clamp(30px, 5vw, 60px); // Marge responsive sous le bloc home-paragraph (logo Instagram inclus)
+    margin-bottom: clamp(10px, 5vw, 60px); // Marge responsive sous le bloc home-paragraph (logo Instagram inclus)
 }
 
 .home-paragraph .home-block-1 {
@@ -221,31 +300,11 @@ body {
     margin-bottom: 20px; // Ajoute une marge de 20px sous le block 3
 }
 
-.instagram-logo {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    min-height: 40px;
-    max-width: 60px;
-    max-height: 60px;
-    transition: width 0.2s, height 0.2s;
-    display: block;
-}
-
-.btn-instagram {
-    display: inline-block;
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-}
-
 .tatoueuses-img-wrapper {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto 0 auto;
     width: 100%;
     margin-bottom: clamp(80px, 10vw, 100px); // Marge responsive sous tatoueuses-rectangle
 }
@@ -580,10 +639,11 @@ body,
 }
 
 .logo-la-triade {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
+
 
 .logo-katucya-accueil {
     display: block;
@@ -2222,7 +2282,6 @@ body,
         width: 320px;
         margin-bottom: 30px; // Ajoute un peu d'espace en dessous du titre
         align-self: center; // Centre horizontalement dans le flex column
-
         display: flex;
         justify-content: center;
         text-align: center;
