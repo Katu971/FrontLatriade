@@ -21,6 +21,10 @@ body {
     margin: 0;
 }
 
+.p-3 {
+    padding: 10px !important;
+}
+
 .navbar.fixed-top {
     z-index: 1050; // S'assure qu'elle passe au-dessus du contenu
 
@@ -92,6 +96,10 @@ body {
 
 /* En desktop, menu horizontal classique */
 @media (min-width: 992px) {
+    .p-3 {
+        padding: 20px !important;
+    }
+
     .navbar-nav {
         flex-direction: row !important;
         align-items: center !important;
@@ -526,7 +534,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     background: transparent;
-    padding: 100px 0 0 0;
+    padding: 60px 0 0 0;
 }
 
 .footer-content {
@@ -2029,13 +2037,6 @@ body,
     min-height: 1100px;
 }
 
-@media (min-width: 325px) {
-    .background-gradient-scroll-contact {
-        height: 1300px;
-        min-height: 1300px;
-    }
-}
-
 .contact-map-img {
     width: 100vw;
     max-width: 1512px;
@@ -2051,20 +2052,12 @@ body,
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .contact-map-img {
         height: 50vw;
         /* La hauteur diminue en mobile */
         min-height: 90px;
         max-height: 211px;
-    }
-}
-
-@media (max-width: 600px) {
-    .contact-map-img {
-        height: 50vw;
-        min-height: 80px;
-        max-height: 180px;
     }
 }
 
@@ -2247,7 +2240,6 @@ body,
     transition: width 0.5s;
 }
 
-
 .contact-form-label.message-label,
 .contact-form-label.téléphone-label,
 .contact-form-label.mail-label,
@@ -2362,10 +2354,951 @@ body,
 
 }
 
-@media (min-width: 900px) {
-    .background-gradient-scroll-contact {
-        width: 100%;
-        height: 1700px;
-        min-height: 1700px;
+
+
+//CONTACT Katucya
+
+
+.contact-logo-katucya {
+    width: 100vw;
+    max-width: 1512px;
+    height: 423px;
+    min-width: 320px;
+    min-height: 179px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 18px 18px 0 18px;
+    margin: 0 auto;
+    transition: height 0.3s, width 0.3s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 700px) {
+    .contact-logo-katucya {
+        height: 50vw;
+        /* La hauteur diminue en mobile */
+        min-height: 90px;
+        max-height: 211px;
     }
+}
+
+.contact-form-superpose-katucya {
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-form-custom-katucya {
+    width: 234px;
+    height: 392px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-form-row-katucya {
+    left: 15px;
+    top: 74px;
+    width: 202px;
+    height: 22px;
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+}
+
+.contact-form-input-katucya {
+    background: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 4px 8px;
+    height: 22px;
+    width: 96.65px;
+    box-sizing: border-box;
+}
+
+.contact-form-input-katucya.mail {
+    left: 15px;
+    top: 135px;
+    width: 202px;
+    height: 22px;
+    background: #D9D9D9;
+    z-index: 2;
+}
+
+.contact-form-labels-column-katucya {
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 38px;
+    width: 202px;
+    height: 22px;
+    z-index: 10;
+}
+
+.contact-form-input-katucya[type="tel"] {
+    left: 15px;
+    top: 196px;
+    width: 202px;
+    height: 22px;
+    background: #D9D9D9;
+    z-index: 2;
+}
+
+.contact-form-inputs-column-katucya {
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.contact-form-label-katucya.message-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-label-katucya.téléphone-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-label-katucya.mail-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-label-katucya.nom-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-textarea-katucya {
+    left: 15px;
+    top: 257px;
+    width: 202px;
+    height: 75px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    resize: none;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.contact-form-btn-katucya {
+    margin-top: 20px;
+    left: 15px;
+    width: 202px;
+    height: 22px;
+    background: #535353;
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.requiredKatucya {
+    color: #FF0000;
+}
+
+
+.contact-form-title-katucya {
+    margin-bottom: 20px;
+    font-size: 15px;
+    left: 50%;
+    width: 161px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #000;
+    z-index: 2;
+    text-transform: uppercase;
+    text-align: center;
+    transition: font-size 0.3s, width 0.3s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contact-form-row-katucya,
+.contact-form-input-katucya.mail,
+.contact-form-btn-katucya,
+.contact-form-textarea-katucya {
+    transition: width 0.5s;
+}
+
+.contact-form-label-katucya.message-label,
+.contact-form-label-katucya.téléphone-label,
+.contact-form-label-katucya.mail-label,
+.contact-form-label-katucya.nom-label {
+    font-size: 10px;
+    transition: font-size 0.2s;
+}
+
+@media (min-width: 700px) {
+
+    .contact-form-superpose-katucya {
+        margin-top: -160px;
+
+    }
+
+    .contact-form-custom-katucya {
+        width: 700px;
+        height: 600px; // Augmente la hauteur du formulaire
+        padding: 30px; // Ajoute un peu de padding pour l'esthétique
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    .contact-form-title-katucya {
+        font-size: 20px;
+        width: 320px;
+        margin-bottom: 30px; // Ajoute un peu d'espace en dessous du titre
+        align-self: center; // Centre horizontalement dans le flex column
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .contact-form-input-katucya {
+        width: 310px; // Augmente la largeur des inputs
+        height: 40px; // Augmente la hauteur des inputs
+        font-size: 15px; // Augmente la taille de police des inputs
+    }
+
+    .contact-form-label-katucya.message-label,
+    .contact-form-label-katucya.téléphone-label,
+    .contact-form-label-katucya.mail-label,
+    .contact-form-label-katucya.nom-label {
+        font-size: 15px;
+    }
+
+    .contact-form-labels-column-katucya {
+        gap: 70px; // Augmente l'espace entre les labels
+        left: 15px; // Ajuste la position des inputs
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+
+    .contact-form-inputs-column-katucya {
+
+        gap: 53px; // Augmente l'espace entre les inputs
+        left: 15px; // Ajuste la position des inputs
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .contact-form-textarea-katucya {
+        height: 100px; // Augmente la hauteur de la textarea
+    }
+
+    .contact-form-btn-katucya {
+        height: 40px; // Augmente la hauteur du bouton
+        font-size: 15px; // Augmente la taille de police du bouton
+        margin-top: 30px;
+        width: 640px;
+    }
+
+    .contact-form-input-katucya.mail {
+        top: 135px; // Ajuste la position de l'input mail
+        width: 640px;
+        height: 40px; // Augmente la hauteur des inputs
+    }
+
+    .contact-form-input-katucya[type="tel"] {
+        top: 196px; // Ajuste la position de l'input téléphone
+        width: 640px;
+        height: 40px; // Augmente la hauteur des inputs
+    }
+
+    .contact-form-textarea-katucya {
+        top: 257px; // Ajuste la position de la textarea
+        width: 640px;
+    }
+
+    .contact-form-row-katucya {
+        left: 15px; // Ajuste la position de la ligne
+        height: 40px; // Ajuste la hauteur de la ligne
+        width: 640px; // Ajuste la largeur de la ligne
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px; // Augmente l'espace entre les inputs de la ligne
+        top: 74px;
+    }
+
+}
+
+
+//CONTACT Emmanuelle
+
+
+.contact-logo-emmanuelle {
+    /* Logo de contact Emmanuelle */
+    width: 100vw;
+    max-width: 1512px;
+    height: 423px;
+    min-width: 320px;
+    min-height: 179px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 18px 18px 0 18px;
+    margin: 0 auto;
+    transition: height 0.3s, width 0.3s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 700px) {
+    .contact-logo-emmanuelle {
+        height: 50vw;
+        /* La hauteur diminue en mobile */
+        min-height: 90px;
+        max-height: 211px;
+    }
+}
+
+.contact-form-superpose-emmanuelle {
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-form-custom-emmanuelle {
+    width: 234px;
+    height: 392px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-form-row-emmanuelle {
+    left: 15px;
+    top: 74px;
+    width: 202px;
+    height: 22px;
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+}
+
+.contact-form-input-emmanuelle {
+    background: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 4px 8px;
+    height: 22px;
+    width: 96.65px;
+    box-sizing: border-box;
+}
+
+.contact-form-input-emmanuelle.mail {
+    left: 15px;
+    top: 135px;
+    width: 202px;
+    height: 22px;
+    background: #D9D9D9;
+    z-index: 2;
+}
+
+.contact-form-labels-column-emmanuelle {
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 38px;
+    width: 202px;
+    height: 22px;
+    z-index: 10;
+}
+
+.contact-form-input-emmanuelle[type="tel"] {
+    left: 15px;
+    top: 196px;
+    width: 202px;
+    height: 22px;
+    background: #D9D9D9;
+    z-index: 2;
+}
+
+.contact-form-inputs-column-emmanuelle {
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.contact-form-label-emmanuelle.message-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-label-emmanuelle.téléphone-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-label-emmanuelle.mail-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-label-emmanuelle.nom-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-textarea-emmanuelle {
+    left: 15px;
+    top: 257px;
+    width: 202px;
+    height: 75px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    resize: none;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.contact-form-btn-emmanuelle {
+    margin-top: 20px;
+    left: 15px;
+    width: 202px;
+    height: 22px;
+    background: #535353;
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.requiredEmmanuelle {
+    color: #FF0000;
+}
+
+
+.contact-form-title-emmanuelle {
+    margin-bottom: 20px;
+    font-size: 15px;
+    left: 50%;
+    width: 161px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #000;
+    z-index: 2;
+    text-transform: uppercase;
+    text-align: center;
+    transition: font-size 0.3s, width 0.3s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contact-form-row-emmanuelle,
+.contact-form-input-emmanuelle.mail,
+.contact-form-btn-emmanuelle,
+.contact-form-textarea-emmanuelle {
+    transition: width 0.5s;
+}
+
+.contact-form-label-emmanuelle.message-label,
+.contact-form-label-emmanuelle.téléphone-label,
+.contact-form-label-emmanuelle.mail-label,
+.contact-form-label-emmanuelle.nom-label {
+    font-size: 10px;
+    transition: font-size 0.2s;
+}
+
+@media (min-width: 700px) {
+
+    .contact-form-superpose-emmanuelle {
+        margin-top: -80px;
+
+    }
+
+    .contact-form-custom-emmanuelle {
+        width: 700px;
+        height: 600px; // Augmente la hauteur du formulaire
+        padding: 30px; // Ajoute un peu de padding pour l'esthétique
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    .contact-form-title-emmanuelle {
+        font-size: 20px;
+        width: 320px;
+        margin-bottom: 30px; // Ajoute un peu d'espace en dessous du titre
+        align-self: center; // Centre horizontalement dans le flex column
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .contact-form-input-emmanuelle {
+        width: 310px; // Augmente la largeur des inputs
+        height: 40px; // Augmente la hauteur des inputs
+        font-size: 15px; // Augmente la taille de police des inputs
+    }
+
+    .contact-form-label-emmanuelle.message-label,
+    .contact-form-label-emmanuelle.téléphone-label,
+    .contact-form-label-emmanuelle.mail-label,
+    .contact-form-label-emmanuelle.nom-label {
+        font-size: 15px;
+    }
+
+    .contact-form-labels-column-emmanuelle {
+        gap: 70px; // Augmente l'espace entre les labels
+        left: 15px; // Ajuste la position des inputs
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+
+    .contact-form-inputs-column-emmanuelle {
+
+        gap: 53px; // Augmente l'espace entre les inputs
+        left: 15px; // Ajuste la position des inputs
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .contact-form-textarea-emmanuelle {
+        height: 100px; // Augmente la hauteur de la textarea
+    }
+
+    .contact-form-btn-emmanuelle {
+        height: 40px; // Augmente la hauteur du bouton
+        font-size: 15px; // Augmente la taille de police du bouton
+        margin-top: 30px;
+        width: 640px;
+    }
+
+    .contact-form-input-emmanuelle.mail {
+        top: 135px; // Ajuste la position de l'input mail
+        width: 640px;
+        height: 40px; // Augmente la hauteur des inputs
+    }
+
+    .contact-form-input-emmanuelle[type="tel"] {
+        top: 196px; // Ajuste la position de l'input téléphone
+        width: 640px;
+        height: 40px; // Augmente la hauteur des inputs
+    }
+
+    .contact-form-textarea-emmanuelle {
+        top: 257px; // Ajuste la position de la textarea
+        width: 640px;
+    }
+
+    .contact-form-row-emmanuelle {
+        left: 15px; // Ajuste la position de la ligne
+        height: 40px; // Ajuste la hauteur de la ligne
+        width: 640px; // Ajuste la largeur de la ligne
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px; // Augmente l'espace entre les inputs de la ligne
+        top: 74px;
+    }
+}
+
+
+//CONTACT Sarah
+
+
+.contact-logo-sarah {
+    width: 100vw;
+    max-width: 1512px;
+    height: 423px;
+    min-width: 320px;
+    min-height: 179px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 18px 18px 0 18px;
+    margin: 0 auto;
+    transition: height 0.3s, width 0.3s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 700px) {
+    .contact-logo-sarah {
+        height: 50vw;
+        /* La hauteur diminue en mobile */
+        min-height: 90px;
+        max-height: 211px;
+    }
+}
+
+.contact-form-superpose-sarah {
+    margin-top: -75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-form-custom-sarah {
+    width: 234px;
+    height: 392px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-form-row-sarah {
+    left: 15px;
+    top: 74px;
+    width: 202px;
+    height: 22px;
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+}
+
+.contact-form-input-sarah {
+    background: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 4px 8px;
+    height: 22px;
+    width: 96.65px;
+    box-sizing: border-box;
+}
+
+.contact-form-input-sarah.mail {
+    left: 15px;
+    top: 135px;
+    width: 202px;
+    height: 22px;
+    background: #D9D9D9;
+    z-index: 2;
+}
+
+.contact-form-labels-column-sarah {
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 38px;
+    width: 202px;
+    height: 22px;
+    z-index: 10;
+}
+
+.contact-form-input-sarah[type="tel"] {
+    left: 15px;
+    top: 196px;
+    width: 202px;
+    height: 22px;
+    background: #D9D9D9;
+    z-index: 2;
+}
+
+.contact-form-inputs-column-sarah {
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.contact-form-label-sarah.message-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-label-sarah.téléphone-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-label-sarah.mail-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-label-sarah.nom-label {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.contact-form-textarea-sarah {
+    left: 15px;
+    top: 257px;
+    width: 202px;
+    height: 75px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    resize: none;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.contact-form-btn-sarah {
+    margin-top: 20px;
+    left: 15px;
+    width: 202px;
+    height: 22px;
+    background: #535353;
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.requiredSarah {
+    color: #FF0000;
+}
+
+
+.contact-form-title-sarah {
+    margin-bottom: 20px;
+    font-size: 15px;
+    left: 50%;
+    width: 161px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #000;
+    z-index: 2;
+    text-transform: uppercase;
+    text-align: center;
+    transition: font-size 0.3s, width 0.3s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contact-form-row-sarah,
+.contact-form-input-sarah.mail,
+.contact-form-btn-sarah,
+.contact-form-textarea-sarah {
+    transition: width 0.5s;
+}
+
+.contact-form-label-sarah.message-label,
+.contact-form-label-sarah.téléphone-label,
+.contact-form-label-sarah.mail-label,
+.contact-form-label-sarah.nom-label {
+    font-size: 10px;
+    transition: font-size 0.2s;
+}
+
+@media (min-width: 700px) {
+
+    .contact-form-superpose-sarah {
+        margin-top: -200px;
+
+    }
+
+    .contact-form-custom-sarah {
+        width: 700px;
+        height: 600px; // Augmente la hauteur du formulaire
+        padding: 30px; // Ajoute un peu de padding pour l'esthétique
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    .contact-form-title-sarah {
+        font-size: 20px;
+        width: 320px;
+        margin-bottom: 30px; // Ajoute un peu d'espace en dessous du titre
+        align-self: center; // Centre horizontalement dans le flex column
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .contact-form-input-sarah {
+        width: 310px; // Augmente la largeur des inputs
+        height: 40px; // Augmente la hauteur des inputs
+        font-size: 15px; // Augmente la taille de police des inputs
+    }
+
+    .contact-form-label-sarah.message-label,
+    .contact-form-label-sarah.téléphone-label,
+    .contact-form-label-sarah.mail-label,
+    .contact-form-label-sarah.nom-label {
+        font-size: 15px;
+    }
+
+    .contact-form-labels-column-sarah {
+        gap: 70px; // Augmente l'espace entre les labels
+        left: 15px; // Ajuste la position des inputs
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+
+    .contact-form-inputs-column-sarah {
+
+        gap: 53px; // Augmente l'espace entre les inputs
+        left: 15px; // Ajuste la position des inputs
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .contact-form-textarea-sarah {
+        height: 100px; // Augmente la hauteur de la textarea
+    }
+
+    .contact-form-btn-sarah {
+        height: 40px; // Augmente la hauteur du bouton
+        font-size: 15px; // Augmente la taille de police du bouton
+        margin-top: 30px;
+        width: 640px;
+    }
+
+    .contact-form-input-sarah.mail {
+        top: 135px; // Ajuste la position de l'input mail
+        width: 640px;
+        height: 40px; // Augmente la hauteur des inputs
+    }
+
+    .contact-form-input-sarah[type="tel"] {
+        top: 196px; // Ajuste la position de l'input téléphone
+        width: 640px;
+        height: 40px; // Augmente la hauteur des inputs
+    }
+
+    .contact-form-textarea-sarah {
+        top: 257px; // Ajuste la position de la textarea
+        width: 640px;
+    }
+
+    .contact-form-row-sarah {
+        left: 15px; // Ajuste la position de la ligne
+        height: 40px; // Ajuste la hauteur de la ligne
+        width: 640px; // Ajuste la largeur de la ligne
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px; // Augmente l'espace entre les inputs de la ligne
+        top: 74px;
+    }
+
 }
